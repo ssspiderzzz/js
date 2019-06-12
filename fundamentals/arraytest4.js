@@ -1,10 +1,8 @@
 var range = function (start, end, step) {
-  if (start < end) {
-    var array = [];
+  var array = [];
+  if (start < end && step > 0) {
     for (var element = start; element <= end; element += step){
-       
       array.push(element);
-      
     }
   }
   return array;
